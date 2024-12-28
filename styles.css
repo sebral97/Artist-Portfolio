@@ -1,0 +1,242 @@
+/*Universal Selector*/
+
+/*Reset Settings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Tag Selectors*/
+
+body {
+  font-family: "Cormorant", serif;
+  background-color: #f4f4f44a;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 40px;
+  margin: 0 50px 0 0;
+}
+
+h1 span {
+  color: #770f37;
+  display: inline-block;
+  animation: spin 15s linear infinite;
+}
+
+/*create animation*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Class Selectors*/
+
+.navbar {
+  /*min-width: 926px;*/
+  /*Shorthand for m-top,m-right,m-bottom,m-left*/
+  margin: 50px 0px 100px 35px;
+}
+
+.inline-block {
+  /*To display content in same line and be able to set height width margin paddings*/
+  display: inline-block;
+}
+
+.links ul {
+  font-family: "Lora", serif;
+  display: inline-block;
+  /*Remove list default style*/
+  list-style: none;
+}
+
+.links ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+/*LVHA order*/
+
+.links a:link,
+.links a:visited {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.links a:hover,
+.links a:active {
+  font-size: 25px;
+  color: #003;
+}
+
+/*Here better use pseudo-class our links point no-where*/
+/*We can use a class like .active and set it in current page */
+/*To achieve this we can use border-bottom 1px solid black and control the space with border-bottom*/
+/* .links ul li:first-child a {
+  text-decoration: underline 1px;
+  text-underline-offset: 5px;
+} */
+
+#work-link {
+  text-decoration: underline 1px;
+  text-underline-offset: 5px;
+}
+/*Styling main section*/
+
+main {
+  margin-left: 35px;
+}
+
+.card {
+  width: 49.8%;
+  display: inline-block;
+  padding: 0 30px 30px 0;
+}
+
+.card img {
+  height: 500px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 7px 20px #a19999b8;
+  margin-bottom: 10px;
+  /*To make image looks good while shrink space*/
+  object-fit: cover;
+}
+
+/*Add some effect on images*/
+.card img:hover {
+  opacity: 0.8;
+}
+
+.card h2 {
+  font-weight: 400;
+  text-align: center;
+  color: #770f37;
+  text-shadow: 0px 17px 2px #770f3729;
+}
+
+/*Styling the footer*/
+
+.footer {
+  width: 30%;
+  margin: 0 0 50px 200px;
+}
+
+.footer h3 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.footer h3:last-of-type {
+  text-decoration: underline #770f37;
+  text-underline-offset: 20px;
+}
+
+.footer h4 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/*Style the contact page*/
+.contact-container {
+  width: 80%;
+  max-width: 900px;
+  height: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #d32c6d;
+  border-radius: 10px;
+  padding: 1rem 4rem;
+}
+.sign-in h1 {
+  color: #770f37;
+  margin: 0 0 2rem 0; /* Space between heading and form */
+  text-align: center;
+}
+
+.sign-in form div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.sign-in div {
+  padding: 2rem 1rem;
+  font-size: 1.3rem;
+}
+
+.sign-in div input {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid #ff7f00;
+}
+.sign-in div input:focus {
+  border: 2px solid rgb(5, 56, 5);
+}
+.sign-in div label {
+  padding-bottom: 1rem;
+}
+
+.sign-in div input[type="submit"] {
+  margin-top: 2rem;
+  border: none;
+  color: #770f37;
+  cursor: pointer;
+  background-color: #95919182;
+}
+
+.sign-in div input[type="submit"]:hover {
+  background-color: #959191;
+}
+
+/* Use flexbox instead of inline-block*/
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.contact-footer ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin-left: 1rem;
+}
+
+#contact-link {
+  text-decoration: underline 1px;
+  text-underline-offset: 5px;
+}
+#about-link {
+  text-decoration: underline 1px;
+  text-underline-offset: 5px;
+}
+
+#about-heading {
+  margin-bottom: 2rem;
+}
+
+audio {
+  margin-bottom: 2rem;
+}

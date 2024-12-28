@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ceramic Shop Contact</title>
+  </head>
+
+  <body>
+    <div class="contact-container">
+      <audio controls autoplay loop>
+        <source
+          src="assets/a-short-piano-intermezzo-218315.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element think about a solution.
+      </audio>
+
+      <main class="sign-in">
+        <h1>Sign-in</h1>
+        <form>
+          <div>
+            <label for="text">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="text"
+              placeholder="Enter a username"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@outlook.fr"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              maxlength="16"
+              placeholder="At least 8 characters"
+              required
+            />
+          </div>
+          <div>
+            <label for="birth">Birthday</label>
+            <input type="date" id="birth" name="birthday" required />
+            <input type="submit" />
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer>
+      <div class="contact-footer">
+        <p>2024 Ceramic Shop. &copy;All rights reserved.</p>
+        <nav class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a id="contact-link" href="#">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
